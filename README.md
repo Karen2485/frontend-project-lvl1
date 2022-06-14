@@ -7,7 +7,7 @@ brain-even
 
 [![asciicast](https://asciinema.org/a/ko6bkbuxmo3nsbbyZXYS7mZku.svg)](https://asciinema.org/a/ko6bkbuxmo3nsbbyZXYS7mZku)
 
-rain-calc
+brain-calc
 
 [![asciicast](https://asciinema.org/a/XRFf6UFWZ2WMHHVWK1KJQMv8b.svg)](https://asciinema.org/a/XRFf6UFWZ2WMHHVWK1KJQMv8b)
 
