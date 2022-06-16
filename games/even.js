@@ -18,7 +18,7 @@ const game = () => {
     if (isEven % 2 === 0 && userAnswer === 'yes') {
       console.log('Correct!');
     } else if (isEven % 2 === 0 && userAnswer !== 'yes') {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${name}`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${name}!`);
       return;
     }
   }
