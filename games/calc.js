@@ -15,13 +15,13 @@ const calculator = () => {
     let res = 0;
     let question = '';
     switch (operatorIndex) {
-      case 0: question = (`Question:  ${number1} + ${number2}`);
+      case 0: question = (`Question: ${number1} + ${number2}`);
         res = number1 + number2;
         break;
-      case 1: question = (`Question:  ${number1} - ${number2}`);
+      case 1: question = (`Question: ${number1} - ${number2}`);
         res = number1 - number2;
         break;
-      case 2: question = (`Question:  ${number1} * ${number2}`);
+      case 2: question = (`Question: ${number1} * ${number2}`);
         res = number1 * number2;
         break;
       default:
