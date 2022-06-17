@@ -18,12 +18,13 @@ const progression = () => {
       progress.push(progressStart);
     }
     const elementIndex = randomNumber(progressLength);
-    const hiddenElement = progress[elementIndex];
+    const hiddenElement = progress[elementIndex].toString();
+   // console.log(hiddenElement, progress, elementIndex, progress[elementIndex])
     progress[elementIndex] = '..';
     const str = progress.join(' ');
     question(str);
     const userAnswer = answer();
-    if (userAnswer !== hiddenElement.toString()) {
+    if (userAnswer !== hiddenElement) {
       wrongAnswer(userAnswer, hiddenElement, name);
       return;
     }
