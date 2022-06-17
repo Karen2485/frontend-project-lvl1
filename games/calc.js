@@ -1,12 +1,12 @@
-import readLineSync from 'readline-sync';
 import {
-  congratulation, correctAnswer, randomNumber, welcome, wrongAnswer,
+  congratulation, correctAnswer, randomNumber, welcome, wrongAnswer, question, answer, haveName,
+  greeting,
 } from '../src/index.js';
 
 const calculator = () => {
   welcome();
-  const name = readLineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  const name = haveName();
+  greeting(name);
   console.log('What is the result of the expression?');
   for (let i = 1; i <= 3; i += 1) {
     const number1 = randomNumber(10);
