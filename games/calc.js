@@ -27,7 +27,7 @@ const calculator = () => {
       default:
     }
     console.log(question);
-    const expressionAnswer = Number(readLineSync.question('Your answer: '));
+    const expressionAnswer = Number(answer());
     if (expressionAnswer !== res) {
       wrongAnswer(expressionAnswer, res, name);
       return;
