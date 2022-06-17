@@ -19,7 +19,6 @@ const progression = () => {
     }
     const elementIndex = randomNumber(progressLength);
     const hiddenElement = progress[elementIndex].toString();
-   // console.log(hiddenElement, progress, elementIndex, progress[elementIndex])
     progress[elementIndex] = '..';
     const str = progress.join(' ');
     question(str);

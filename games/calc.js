@@ -1,5 +1,5 @@
 import {
-  congratulation, correctAnswer, randomNumber, welcome, wrongAnswer, question, answer, haveName,
+  congratulation, correctAnswer, randomNumber, welcome, wrongAnswer, answer, haveName,
   greeting,
 } from '../src/index.js';
 
