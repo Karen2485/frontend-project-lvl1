@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import prime from '../games/prime.js';
+import { generateGame, rules } from '../src/games/prime.js';
+import gameEngin from '../src/index.js';
 
-prime();
+gameEngin(generateGame, rules);

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import progression from '../games/prog.js';
+import { generateGame, rules } from '../src/games/prog.js';
+import gameEngin from '../src/index.js';
 
-progression();
+gameEngin(generateGame, rules);

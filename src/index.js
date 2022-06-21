@@ -1,11 +1,20 @@
 import readLineSync from 'readline-sync';
 
-export const welcome = () => console.log('Welcome to the Brain Games!');
-export const randomNumber = (randomRange) => Math.round(Math.random() * (randomRange));
-export const wrongAnswer = (wrong, riht, user) => console.log(`'${wrong}' is wrong answer ;(. Correct answer was '${riht}'.\nLet's try again, ${user}!`);
-export const correctAnswer = () => console.log('Correct!');
-export const congratulation = (user) => console.log(`Congratulations, ${user}!`);
-export const question = (task) => console.log(`Question: ${task}`);
-export const answer = () => readLineSync.question('Your answer: ');
-export const haveName = () => readLineSync.question('May I have your name? ');
-export const greeting = (nameOfUser) => console.log(`Hello, ${nameOfUser}!`);
+const gameEngin = (generateGame, rules) => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readLineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log(rules);
+  for (let i = 1; i <= 3; i += 1) {
+    const [correctAnswer, gameTask] = generateGame();
+    console.log(`Question: ${gameTask}`);
+    const answer = readLineSync.question('Your answer? ');
+    if (answer !== correctAnswer) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
+      return;
+    }
+    console.log('Correct!');
+  }
+  console.log(`Congratulations, ${userName}!`);
+};
+export default gameEngin;

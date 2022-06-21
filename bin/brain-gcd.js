@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import greatestCommonDivisor from '../games/gcd.js';
+import { generateGame, rules } from '../src/games/gcd.js';
+import gameEngin from '../src/index.js';
 
-greatestCommonDivisor();
+gameEngin(generateGame, rules);
