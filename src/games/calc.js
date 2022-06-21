@@ -11,6 +11,7 @@ const calculator = (num1, operator, num2) => {
     case '*':
       return num1 * num2;
     default:
+      throw new Error('ACCESS DENAED');
   }
 };
 const generateGame = () => {
