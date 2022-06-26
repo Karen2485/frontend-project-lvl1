@@ -17,7 +17,7 @@ const calculator = (num1, operator, num2) => {
 const getGameData = () => {
   const number1 = randomNumber(0, 10);
   const number2 = randomNumber(0, 10);
-  const operatorIndex = operators[randomNumber(0, 2)];
+  const operatorIndex = operators[randomNumber(0, operators.length - 1)];
   const gameTask = `${number1} ${operatorIndex} ${number2}`;
   const correctAnswer = String(calculator(number1, operatorIndex, number2));
   return [correctAnswer, gameTask];
