@@ -1,6 +1,6 @@
-import randomNumber from '../randomNumber.js';
+import randomNumber from '../helpers.js';
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isPrime = (number) => {
   if (number < 2) {
     return false;
@@ -12,10 +12,10 @@ const isPrime = (number) => {
   }
   return true;
 };
-const generateGame = () => {
-  const givenNumber = randomNumber(100) + 2;
+const getGameData = () => {
+  const givenNumber = randomNumber(0, 100);
   const correctAnswer = isPrime(givenNumber) ? 'yes' : 'no';
   const gameTask = `${givenNumber}`;
   return [correctAnswer, gameTask];
 };
-export { generateGame, rules };
+export { getGameData, gameDescription };
